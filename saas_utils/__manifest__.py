@@ -21,12 +21,12 @@
 
 {
     'name': 'SaaS Utils',
-    'version': '11.0.1.0.1',
+    'version': '12.0.1.0.1',
     'author': 'OpenJAF, Nicolas JEUDY',
     'license': 'LGPL-3',
     "support": "apps@it-projects.info",
     'website': 'http://www.openjaf.com',
     'category': 'Base',
     'depends': ['base'],
-    'installable': False
+    'installable': True
 }
