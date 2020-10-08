@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="mail.ir_cron_module_update_notification" model="ir.cron">
-        <field name="interval_type">days</field>
-        <field name="numbercall">-1</field>
-        <field name="nextcall" eval="(DateTime.now() + timedelta(hours=12)).strftime('%Y-%m-%d %H:%M:%S')" />
-    </record>
+<!--    <record id="ir_cron_module_update_notification_saas_client" model="ir.cron">-->
+<!--        <field name="inherit_id" ref="mail.ir_cron_module_update_notification"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <field name="interval_type" position="replace">-->
+<!--                <field name="interval_type">days</field>-->
+<!--            </field>-->
+<!--            <field name="numbercall" position="replace">-->
+<!--                <field name="numbercall">-1</field>-->
+<!--            </field>-->
+<!--            <field name="nextcall" position="replace">-->
+<!--                <field name="nextcall" eval="(DateTime.now() + timedelta(hours=12)).strftime('%Y-%m-%d %H:%M:%S')" />-->
+<!--            </field>-->
+<!--        </field>-->
+<!--    </record>-->
 </odoo>

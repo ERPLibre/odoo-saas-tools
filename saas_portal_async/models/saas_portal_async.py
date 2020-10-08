@@ -23,12 +23,12 @@ class SaasPortalPlan(models.Model):
     _inherit = 'saas_portal.plan'
 
     @api.multi
-    def create_new_database(self, async=None, **kwargs):
+    def create_new_database(self, a_sync=None, **kwargs):
         if async:
             session = ConnectorSession(self._cr, self._uid, self._context)
             job_uuid = async_client_create.delay(
-                session, self._name, self.id, async=async, **kwargs)
+                session, self._name, self.id, a_sync=async, **kwargs)
         else:
             res = super(SaasPortalPlan, self)._create_new_database(
-                async=async, **kwargs)
+                a_sync=async, **kwargs)
             return res
